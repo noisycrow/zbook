@@ -26,4 +26,4 @@ esac
 fortune testing | $cow
 
 # PS1 is the variable that holds the bash prompt
-export PS1='\w $ '
+export PS1="\[\e[33m\]\W\[\e[m\]\[\e[33m\] >\[\e[m\] "

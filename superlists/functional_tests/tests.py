@@ -64,7 +64,7 @@ class NewVisitorTest(LiveServerTestCase):
         inputbox.send_keys('Buy milk')
         inputbox.send_keys(Keys.ENTER)
 
-        time.sleep(3)
+        time.sleep(2)
         francis_list_url = self.browser.current_url
         self.assertRegex(francis_list_url, '/lists/.+')
         self.assertNotEqual(francis_list_url, edith_list_url)
